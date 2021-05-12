@@ -1,0 +1,23 @@
+extends layout
+block content
+	h1 Dodawanie 
+	form(method="post" action="/add")
+		label Nazwa
+		br
+		input(type="text" name="nazwa")
+		br
+		label Alergeny
+		br
+		input(type="text" name="alergen")
+		br
+		label Kalorie
+		br
+		input(type="number" name="kcal")
+		br
+		label Ilość produktów
+		br
+		input(type="number" name="prod")
+		br
+		input(type="submit" value="Dodaj")
+		if message!=''
+			p #{message}

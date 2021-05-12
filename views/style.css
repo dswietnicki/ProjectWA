@@ -1,0 +1,24 @@
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    position: relative;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+ }
+a ,li{
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    border:1px solid black;
+    text-align:center;
+    padding:3px;
+    
+}
+input {
+    margin-top:5px;
+}

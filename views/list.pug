@@ -1,0 +1,23 @@
+extends layout
+block content
+	h1 Lista dań
+	table
+		tr
+			th Pozycja
+			th Nazwa
+			th Alergeny
+			th Kalorie
+			th ilosc produktów
+			th Edytuj
+			th Usuń
+		each meal, index in mealsList
+			tr
+				td=index+1
+				td=meal.nazwa
+				td=meal.alergen
+				td=meal.kcal
+				td=meal.prod
+				td
+					a(href="/edit/"+meal.id) edytuj
+				td
+					a(href="/delete/"+meal.id) usuń

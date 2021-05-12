@@ -1,0 +1,23 @@
+extends layout
+block content
+	h1 Edycja 
+	form(method="post" action="/edit/"+id)
+		label Nazwa
+		br
+		input(type="text" name="nazwa" value=nazwa)
+		br
+		label Alergeny
+		br
+		input(type="text" name="alergen" value=alergen)
+		br
+		label Kalorie
+		br
+		input(type="number" name="kcal" value=kcal)
+		br
+		label Ilość produktów
+		br
+		input(type="number" name="prod" value=prod)
+		br
+		input(type="submit" value="Zmien")
+		if message!=''
+			p #{message}

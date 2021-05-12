@@ -1,0 +1,20 @@
+doctype html
+html(lang='pl')
+	head
+		title='Posiłki'
+		style 
+			include style.css
+			
+	body
+		nav
+			ul
+				li
+					a(href="/") Start
+				li
+					a(href="/list") Lista dań
+				li
+					a(href="/add") Dodaj
+		main
+			block content
+		footer
+			p Copyright
